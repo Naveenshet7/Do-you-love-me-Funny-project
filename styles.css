@@ -1,0 +1,84 @@
+body {
+    background-color: #333;
+    color: #e9ebf0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: neon-glow 2s infinite;
+  }
+  
+  @keyframes neon-glow {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(243, 245, 242, 0.5);
+      border: 1px solid rgba(255, 12, 113, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+
+#question {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff69b4, #33ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#yes-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#no-btn {
+    background-color: #E74C3C;
+    color: #fff;
+}
+
+#answer {
+    font-size: 20px;
+    margin-top: 20px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
